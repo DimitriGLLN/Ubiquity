@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubiquity</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="helpers.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Ubiquity's logo" class="site-img">
+                <span class="site-name">Ubiquity</span>
+                <span class="site-baseline">Professional Web UI</span>
+            </div>
+            <nav class="main-nav">
+                <button class="toggle-menu" aria-expanded="false" aria-controls="menu">Menu</button>
+                <ul id="menu" class="menu" role="list" hidden>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link menu-link-active">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Portfolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="slideshow">
+            <ul class="slides" role="list">
+                <li class="slide">
+                    <div class="container">
+                        <h1>At Ubiquity , We care</h1>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="slide-arrows container">
+                <button class="slide-prev ir">Go to previous slide</button>
+                <button class="slide-next ir">Go to next slide</button>
+            </div>
+            <ul class="slides-dots" role="list">
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 1</span></button></li>
+                <li class="slide-dot"><button class="slide-active"><span class="screen-reader-text">Go to slide
+                            2</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 3</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 4</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 5</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 6</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 7</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 8</span></button></li>
+            </ul>
+        </section>
+
+        <section class="action">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <span class="dot-accent"></span>
+                <span class="dot"></span>
+                <p class="section-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum.</p>
+                <div class="action-grid">
+                    <ul class="action-list" role="list">
+                        <li class="action-list-item">
+
+                            <figure class="action-list-figure">
+                                <img src="img/briefcase.svg" alt="Some notes" class="action-list-image">
+                            </figure>
+                            <h3 class="-list-title">Consultation</h3>
+                            <p class="action-list-description">Give a brief description of the feature that you are
+                                promoting. Keep it short so that its easy for people to read.</p>
+                        </li>
+                        <li class="action-list-item">
+                            <figure class="action-list-figure">
+                                <img src="img/notes.svg" alt="Some notes" class="action-list-image">
+                            </figure>
+                            <h3 class="-list-title">Blogging</h3>
+                            <p class="action-list-description">Give a brief description of the feature that you are
+                                promoting. Keep it short so that its easy for people to read.</p>
+                        </li>
+                        <li class="action-list-item">
+                            <figure class="action-list-figure">
+                                <img src="img/star.svg" alt="A star" class="action-list-image">
+                            </figure>
+                            <h3 class="action-list-title">Social Media</h3>
+                            <p class="action-list-description">Give a brief description of the feature that you are
+                                promoting. Keep it short so that its easy for people to read.</p>
+                        </li>
+                        <li class="action-list-item">
+                            <figure class="action-list-figure">
+                                <img src="img/bolt.svg" alt="A bolt" class="action-list-image">
+                            </figure>
+                            <h3 class="action-list-title">SEO</h3>
+                            <p class="action-list-description">Give a brief description of the feature that you are
+                                promoting. Keep it short so that its easy for people to read.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="section-intro">
+                    <h2 class="section-title">What is Ubiquity</h2>
+                    <span class="dot-accent"></span>
+                    <span class="dot-invert"></span>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat,</p>
+                </div>
+                <img src="img/groupe_33.png" alt="A mockup of Ubiquity">
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title">Latest Posts
+                </h2>
+                <span class="dot-accent"></span>
+                <span class="dot"></span>
+                <p class="features-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                </p>
+                <ul class="service-list" role="list">
+                    <li class="service-item">
+                        <a href="#">
+                            <figure class="service-fig">
+                                <img src="img/annie-spratt-wgivdx9dBdQ-unsplash.png" alt="" class="service-img">
+                            </figure>
+                            <h3 class="service-title">Blog Title</h3>
+                            <p class="service-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                        </a>
+                    </li>
+                    <li class="service-item">
+                        <a href="#">
+                            <figure class="service-fig">
+                                <img src="img/william-iven-SpVHcbuKi6E-unsplash.png" alt="" class="service-img">
+                            </figure>
+                            <h3 class="service-title">Title of the Blog</h3>
+                            <p class="service-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                        </a>
+                    </li>
+                    <li class="service-item">
+                        <a href="#">
+                            <figure class="service-fig">
+                                <img src="img/green-chameleon-s9CC2SKySJM-unsplash.png" alt="" class="service-img">
+                            </figure>
+                            <h3 class="service-title">Title of the Blog</h3>
+                            <p class="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellendus
+                                corporis beatae odit quaerat officiis perferendis!</p>
+                        </a>
+                    </li>
+                    <li class="service-item">
+                        <a href="#">
+                            <figure class="service-fig">
+                                <img src="img/helloquence-5fNmWej4tAA-unsplash.png" alt="Une feuille d'arbre" class="">
+                            </figure>
+                            <h3 class="service-title">Blog Title</h3>
+                            <p class="service-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                        </a>
+                    </li>
+                    <li class="service-item">
+                        <a href="#">
+                            <figure class="service-fig">
+                                <img src="img/lauren-mancke-aOC7TSLb1o8-unsplash-1.png" alt="" class="service-img">
+                            </figure>
+                            <h3 class="service-title">Blog Title</h3>
+                            <p class="service-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                        </a>
+                    </li>
+                    <li class="service-item">
+                        <a href="#">
+                            <figure class="service-fig">
+                                <img src="img/annie-spratt-wgivdx9dBdQ-unsplash.png" alt="" class="service-img">
+                            </figure>
+                            <h3 class="service-title">Blog Title</h3>
+                            <p class="service-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="fun-fact" id="">
+            <div class="container">
+                <h2 class="news-title">Fun Facts</h2>
+                <span class="dot"></span>
+                <span class="dot-accent"></span>
+                <ul class="news-list" role="list">
+
+                    <li class="news-item">
+                        <h3 class="info-title">5<span class="info-desc">people</span></h3>
+                    </li>
+                    <li class="news-item">
+                        <h3 class="info-title">243<span class="info-desc">pageviews</span></h3>
+                    </li>
+                    <li class="news-item">
+                        <h3 class="info-title">23<span class="info-desc">coffees</span></h3>
+                    </li>
+                    <li class="news-item">
+                        <h3 class="info-title">600<span class="info-desc">hours</span></h3>
+                    </li>
+                    <li class="news-item">
+                        <h3 class="info-title">40<span class="info-desc">days</span></h3>
+                    </li>
+                    <li class="news-item">
+                        <h3 class="info-title">17<span class="info-desc">days</span></h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <ul class="slides" role="list">
+                <li class="testimonial-slide">
+                    <div class="container">
+                        <figure class="testimonial-fig"><img src="img/Image_1.png" srcset="img/Image 1@2x.png 2x"
+                                alt="Photo of Amanda Sigfried working on a computer" class="testimonial-img"></figure>
+                        <div class="testimonial-slide-content">
+                            <h2 class="testimonial-title">Amanda Sigfried</h2>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam
+                                et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="slides-dots" role="list">
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 1</span></button></li>
+                <li class="slide-dot"><button class="slide-active"><span class="screen-reader-text">Go to slide
+                            2</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 3</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 4</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 5</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 6</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 7</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 8</span></button></li>
+            </ul>
+        </section>
+
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="main-footer-outil">
+                    <p class="main-footer-title">Recent posts</p>
+                    <ul class="main-footer-list" role="list">
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg">
+                                ipsum dolor.</a>
+                        </li>
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg"> at
+                                quia!</a>
+                        </li>
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg">iste fugiat!</a>
+                        </li>
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg">
+                                commodi repellat.</a>
+                        </li>
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg">
+                                consequuntur
+                                voluptatum.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-footer-outil">
+                    <p class="main-footer-title">Recent comments</p>
+                    <ul class="main-footer-list" role="list">
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg">
+                                ipsum dolor.</a>
+                        </li>
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg"> at
+                                quia!</a>
+                        </li>
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg"> iste
+                                fugiat!</a>
+                        </li>
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg">
+                                commodi repellat.</a>
+                        </li>
+                        <li class="main-footer-item">
+                            <a href="" class="main-footer-link"><img src="img/angle-double-right.svg">consequuntur
+                                voluptatum.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-footer-outil">
+                    <p class="main-footer-title">Tags</p>
+                    <ul class="main-footer-list-tags" role="list">
+                        <li class="main-footer-item-tags">
+                            <a href="" class="main-footer-link-tags">Insider</a>
+                        </li>
+                        <li class="main-footer-item-tags">
+                            <a href="" class="main-footer-link-tags">Check</a>
+                        </li>
+                        <li class="main-footer-item-tags">
+                            <a href="" class="main-footer-link-tags">Demo</a>
+                        </li>
+                        <li class="main-footer-item-tags">
+                            <a href="" class="main-footer-link-tags">Office</a>
+                        </li>
+                        <li class="main-footer-item-tags">
+                            <a href="" class="main-footer-link-tags">Work</a>
+                        </li>
+                        <li class="main-footer-item-tags">
+                            <a href="" class="main-footer-link-tags">Post</a>
+                        </li>
+                        <li class="main-footer-item-tags">
+                            <a href="" class="main-footer-link-tags">Management</a>
+                        </li>
+                    </ul>
+                </div>
+                <address class="main-footer-outil">
+                    <p class="main-footer-title">Ubiquity</p>
+                    <ul class="main-footer-list-address" role="list">
+                        <li class="main-footer-item"><img src="img/map-marker.svg">2499
+                            Bee Street <br>Bear Lake
+                            <br>Michigan 49614
+                        </li>
+                        <li class="main-footer-item"><a href="tel:2318648100" class="main-footer-link"><img
+                                    src="img/phone.svg">231 - 864 - 8100</a></li>
+                        <li class="main-footer-item "><a href="mailto:Hello@domainname.com"
+                                class="main-footer-link"><img src="img/envelope.svg">Hello@domainname.com</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-footer-bottom">
+                <hr class="main-footer-separator">
+                <div class="footer-copyright">
+                    <ul class="main-footer-social-list" role="list">
+                        <li class="main-footer_social-item"><a href="" class="main-footer-social-link"><img
+                                    src="img/icons8-facebook.svg"></a>
+
+                        </li>
+                        <li class="main-footer-social-item"><a href="" class="main-footer-social-link"><img
+                                    src="img/icons8-twitter.svg"></a>
+
+                        </li>
+                        <li class="main-footer-social-item"><a href="" class="main-footer-social-link"><img
+                                    src="img/icons8-google-plus.svg"></a>
+
+                        </li>
+                    </ul>
+                    <div class="main-footer-copyright">
+                        <p>© 2019 Ubiquity . All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/burger-menu.js"></script>
+</body>
+
+</html>
