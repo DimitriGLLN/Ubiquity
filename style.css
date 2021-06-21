@@ -371,16 +371,15 @@ section:not(.slideshow) {
 /* Slideshow */
 .slideshow {
     position: relative;
-    min-height: 80vh;
     display: flex;
 }
 
-.slides {
+.swiper-wrapper {
     display: flex;
     flex-grow: 1;
 }
 
-.slide {
+.swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,15 +390,16 @@ section:not(.slideshow) {
     background-image: url('../img/slider1.png');
     background-size: cover;
     background-position: center;
+    min-height: 80vh;
 }
 
 @media screen and (min-resolution: 144dpi) {
-    .slide {
+    .swiper-slide {
         background-image: url(../img/slider1@2x.png);
     }
 }
 
-.slide .container {
+.swiper-slide .container {
     max-width: 108.8rem;
 }
 
@@ -410,6 +410,7 @@ section:not(.slideshow) {
     display: flex;
     justify-content: space-between;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .swiper-button-prev,
@@ -443,28 +444,26 @@ section:not(.slideshow) {
     position: absolute;
     bottom: 8rem;
     left: 50%;
-    display: flex;
+    display: inline-block;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.swiper-pagination{
+    left: 50%;
+    display: inline-flex;
     transform: translateX(-50%);
 }
+.swiper-pagination-bullet{
+  border-radius: 0%;
+  margin-right: 1.6rem;}
 
-.slides-dots button {
-    width: 1rem;
-    height: 1rem;
-    padding: 0;
-    border: 0;
-    background-color: var(--darker);
-    transition: background-color .2s;
-}
+.swiper-pagination-bullet-active{
+background-color: var(--accent);
+  }
 
-.slide-dot:not(:last-child) {
-    margin-right: 1rem;
-}
 
-.slides-dots button:hover,
-.slides-dots button:focus,
-.slides-dots .slide-active {
-    background-color: var(--accent);
-}
+
+
 .dot {
     height: 1rem;
     width: 1rem;
@@ -498,19 +497,7 @@ section:not(.slideshow) {
     text-align: center;
     
 }
-.glide-slide{
-    padding-top: 32rem;
-    font-size: 4rem;
-    color: var(--accent);
-}
-.glide-slide p{
-    padding-top: 3.2rem;
-    font-size: 2rem;
-    color: var(--text);
-    padding-bottom: 12rem;
-    max-width: 104rem;
-    margin: auto;
-}
+
 .arrows{
     display: flex;
     justify-content: space-between;
