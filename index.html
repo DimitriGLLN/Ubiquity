@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="helpers.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="swiper-bundle.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
@@ -45,14 +45,32 @@
         </div>
     </header>
     <main>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
         <section class="slideshow">
             <ul class="slides" role="list">
                 <li class="slide">
                     <div class="container">
                         <h1>At Ubiquity , We care</h1>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt
-                            ut labore et dolore magna aliquyam erat, sed.</p>
+                            invidunt ut labore et dolore magna aliquyam erat, sed.</p>
                     </div>
                 </li>
             </ul>
@@ -62,8 +80,7 @@
             </div>
             <ul class="slides-dots" role="list">
                 <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 1</span></button></li>
-                <li class="slide-dot"><button class="slide-active"><span class="screen-reader-text">Go to slide
-                            2</span></button></li>
+                <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 2</span></button></li>
                 <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 3</span></button></li>
                 <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 4</span></button></li>
                 <li class="slide-dot"><button><span class="screen-reader-text">Go to slide 5</span></button></li>
@@ -386,6 +403,7 @@
         </div>
     </footer>
     <script src="js/burger-menu.js"></script>
+    <script src="js/swiper-bundle.js"></script>
 </body>
 
 </html>
