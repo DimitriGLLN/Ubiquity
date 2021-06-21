@@ -412,8 +412,8 @@ section:not(.slideshow) {
     transform: translate(-50%, -50%);
 }
 
-.slide-prev,
-.slide-next {
+.swiper-button-prev,
+.swiper-button-next {
     display: block;
     padding: 0;
     width: 5rem;
@@ -424,16 +424,18 @@ section:not(.slideshow) {
     background-repeat: no-repeat;
     background-color: transparent;
     transition: transform .3s;
+    border: 0;
+    color: transparent;
 }
 
-.slide-next {
+.swiper-button-next {
     background-image: url(../img/arrow-circle-left-1.svg);
 }
 
-.slide-prev:hover,
-.slide-prev:focus,
-.slide-next:hover,
-.slide-next:focus {
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
     transform: scale(1.2);
 }
 
